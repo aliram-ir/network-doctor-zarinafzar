@@ -1,0 +1,86 @@
+/**
+ * WP Network Doctor - Admin Stylesheet
+ */
+
+.wpnd-dashboard-wrap {
+    margin-top: 20px;
+    max-width: 1100px;
+}
+
+.wpnd-header-panel {
+    background: #ffffff;
+    border: 1px solid #c3c4c7;
+    border-left: 4px solid #2271b1;
+    padding: 16px 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.04);
+}
+
+.wpnd-header-panel h2 {
+    margin-top: 0;
+    margin-bottom: 8px;
+}
+
+.wpnd-header-panel p {
+    margin: 0;
+    color: #646970;
+}
+
+.wpnd-actions-card {
+    background: #ffffff;
+    border: 1px solid #c3c4c7;
+    padding: 18px 20px;
+    margin-bottom: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    align-items: center;
+}
+
+.wpnd-actions-card form {
+    margin: 0;
+}
+
+.wpnd-badge {
+    display: inline-block;
+    padding: 4px 10px;
+    border-radius: 4px;
+    font-weight: 600;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+.wpnd-badge-success {
+    background-color: #d1e7dd;
+    color: #0f5132;
+    border: 1px solid #badbcc;
+}
+
+.wpnd-badge-danger {
+    background-color: #f8d7da;
+    color: #842029;
+    border: 1px solid #f5c2c7;
+}
+
+.wpnd-badge-status-on {
+    background-color: #2271b1;
+    color: #ffffff;
+}
+
+.wpnd-badge-status-off {
+    background-color: #787c82;
+    color: #ffffff;
+}
+
+.wpnd-latency {
+    color: #646970;
+    font-size: 12px;
+    margin-left: 6px;
+}
+
+.wpnd-error-hint {
+    color: #b32d2e;
+    font-size: 12px;
+    display: block;
+    margin-top: 4px;
+}

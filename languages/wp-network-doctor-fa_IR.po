@@ -1,0 +1,269 @@
+# Translation of WP Network Doctor in Persian
+# Copyright (C) 2026 Ali Ramezani (ZarinAfzar.com)
+msgid ""
+msgstr ""
+"Project-Id-Version: WP Network Doctor 1.0.0\n"
+"Report-Msgid-Bugs-To: https://zarinafzar.com\n"
+"POT-Creation-Date: 2026-09-25 12:00+0000\n"
+"PO-Revision-Date: 2026-09-25 19:08+0330\n"
+"Last-Translator: Ali Ramezani <info@zarinafzar.com>\n"
+"Language-Team: Persian <fa_IR@li.org>\n"
+"Language: fa_IR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Generator: Poedit 2.2\n"
+
+#: wp-network-doctor.php:12 includes/class-wpnd-admin.php:47
+#: admin/templates/dashboard-page.php:13
+msgid "WP Network Doctor"
+msgstr "دکتر شبکه وردپرس"
+
+#: includes/class-wpnd-admin.php:48
+msgid "Network Doctor"
+msgstr "دکتر شبکه"
+
+#: includes/class-wpnd-admin.php:79
+msgid "You do not have sufficient permissions to access this page."
+msgstr "شما اجازه دسترسی به این برگه را ندارید."
+
+#: includes/class-wpnd-admin.php:91
+msgid "Network patch setting has been updated."
+msgstr "تنظیمات پچ شبکه با موفقیت به‌روزرسانی شد."
+
+#: includes/class-wpnd-admin.php:104
+msgid "Update cache and transients have been successfully purged and refreshed."
+msgstr "کش موقت (Transients) و حافظه بروزرسانی‌ها با موفقیت پاکسازی و مجدداً استعلام شدند."
+
+#: includes/class-wpnd-admin.php:116
+msgid "WordPress Official API"
+msgstr "ای‌پی‌آی رسمی وردپرس"
+
+#: includes/class-wpnd-admin.php:118
+msgid "Core updates and plugin repository query service."
+msgstr "سرویس استعلام بروزرسانی هسته و مخزن افزونه‌ها."
+
+#: includes/class-wpnd-admin.php:122
+msgid "WordPress Downloads Server"
+msgstr "سرور دانلود بسته‌های وردپرس"
+
+#: includes/class-wpnd-admin.php:124
+msgid "Package download repository for packages and zip files."
+msgstr "مخزن دریافت مستقیم بسته‌ها و فایل‌های فشرده افزونه‌ها و قالب‌ها."
+
+#: includes/class-wpnd-admin.php:128
+msgid "Elementor Services API"
+msgstr "سرویس API المنتور"
+
+#: includes/class-wpnd-admin.php:130
+msgid "License validation and cloud template library."
+msgstr "بررسی اصالت لایسنس و کتابخانه الگوهای ابری المنتور."
+
+#: includes/class-wpnd-admin.php:134
+msgid "Google Core Edge"
+msgstr "سرورهای لبه گوگل (Google Core)"
+
+#: includes/class-wpnd-admin.php:136
+msgid "Global network reachability and upstream connectivity diagnostic."
+msgstr "ارزیابی اتصال کلی شبکه به زیرساخت‌ها و سرویس‌های جهانی."
+
+#: includes/class-wpnd-admin.php:140
+msgid "Google Analytics & Tag Manager"
+msgstr "گوگل آنالیتیکس و تگ منیجر"
+
+#: includes/class-wpnd-admin.php:142
+msgid "Monitoring reachability for tracking and tagging services."
+msgstr "بررسی دسترسی‌پذیری سرورهای تحلیل داده و اسکریپت‌های ره‌گیری گوگل."
+
+#: includes/class-wpnd-admin.php:146
+msgid "Cloudflare Anycast DNS / Edge"
+msgstr "دی‌ان‌اس و لبه ابری کلودفلر (Anycast)"
+
+#: includes/class-wpnd-admin.php:148
+msgid "Global CDN and Anycast DNS connectivity diagnostic."
+msgstr "بررسی وضعیت اتصال به شبکه توزیع محتوا و DNS جهانی."
+
+#: includes/class-wpnd-admin.php:152
+msgid "GitHub Raw CDN"
+msgstr "سرور کد و فایل گیت‌هاب (Raw CDN)"
+
+#: includes/class-wpnd-admin.php:154
+msgid "Raw code assets and third-party update hosts."
+msgstr "دریافت کدهای منبع باز و بسته‌های بروزرسانی مستقیم از گیت‌هاب."
+
+#: admin/templates/dashboard-page.php:26
+msgid "Network Optimization & Patch"
+msgstr "بهینه‌سازی و پچ شبکه"
+
+#: admin/templates/dashboard-page.php:28
+msgid "Applies custom browser-like User-Agents, adjusted headers, and extended timeouts to prevent CDN, firewall, and WAF request drops."
+msgstr "اعمال User-Agent مرورگر واقعی، هدرهای استاندارد و افزایش مهلت زمانی (Timeout) جهت رفع مسدودی توسط WAF و فایروال‌ها."
+
+#: admin/templates/dashboard-page.php:33
+msgid "Engine Status:"
+msgstr "وضعیت موتور:"
+
+#: admin/templates/dashboard-page.php:35
+msgid "Active (Patched)"
+msgstr "فعال (پچ اعمال شده)"
+
+#: admin/templates/dashboard-page.php:35
+msgid "Inactive (Default)"
+msgstr "غیرفعال (حالت پیش‌فرض وردپرس)"
+
+#: admin/templates/dashboard-page.php:43
+msgid "Disable Network Patch"
+msgstr "غیرفعال‌سازی پچ شبکه"
+
+#: admin/templates/dashboard-page.php:43
+msgid "Enable Network Patch"
+msgstr "فعال‌سازی پچ شبکه"
+
+#: admin/templates/dashboard-page.php:49
+msgid "Repository & Transients Purge"
+msgstr "پاکسازی ترنزینت‌ها و کش مخزن"
+
+#: admin/templates/dashboard-page.php:51
+msgid "Forces WordPress to drop all cached update transients, flush locks, and ping official repositories for fresh packages."
+msgstr "حذف کامل کش‌های منقضی، ریست قفل‌ها و ارتباط اجباری مجدد با مخزن برای دریافت بسته‌ها و بروزرسانی‌های تازه."
+
+#: admin/templates/dashboard-page.php:57
+msgid "Purge Transients & Re-check Updates"
+msgstr "پاکسازی ترنزینت‌ها و استعلام مجدد بروزرسانی‌ها"
+
+#: admin/templates/dashboard-page.php:64
+msgid "Outbound Connectivity Diagnostics"
+msgstr "عیب‌یابی اتصالات خروجی شبکه"
+
+#: admin/templates/dashboard-page.php:66
+msgid "Real-time HTTP health tests from your server origin to external APIs and global content delivery networks."
+msgstr "آزمایش زنده وضعیت درخواست‌های HTTP سرور شما به سرویس‌ها و شبکه‌های توزیع محتوای جهانی."
+
+#: admin/templates/dashboard-page.php:72
+msgid "Endpoint Service"
+msgstr "سرویس مقصد"
+
+#: admin/templates/dashboard-page.php:73
+msgid "Target Address"
+msgstr "آدرس مقصد"
+
+#: admin/templates/dashboard-page.php:74
+msgid "Status Code"
+msgstr "کد وضعیت"
+
+#: admin/templates/dashboard-page.php:75
+msgid "Latency"
+msgstr "تاخیر پاسخ"
+
+#: admin/templates/dashboard-page.php:76
+msgid "Connection State"
+msgstr "وضعیت اتصال"
+
+#: admin/templates/dashboard-page.php:90
+msgid "Failed"
+msgstr "ناموفق"
+
+#: admin/templates/dashboard-page.php:96
+msgid "Accessible"
+msgstr "در دسترس"
+
+#: admin/templates/dashboard-page.php:99
+msgid "Blocked / Error"
+msgstr "مسدود / خطا"
+
+#: includes/class-wpnd-admin.php:48
+msgid "WP Network Doctor: Update Hooks Inspector"
+msgstr "دکتر شبکه وردپرس: بازرس هوک‌های آپدیت"
+
+#: includes/class-wpnd-admin.php:61
+msgid "Third-party listeners attached to repository update transients. If update checks fail, one of these may be unreachable:"
+msgstr "افزونه‌هایی که به ترنزینت‌های آپدیت متصل هستند. اگر دریافت بروزرسانی‌ها با اختلال مواجه شود، ممکن است سرور یکی از این موارد در دسترس نباشد:"
+
+#: includes/class-wpnd-admin.php:79
+msgid "✔ Clean! No third-party interceptors detected."
+msgstr "✔ وضعیت تمیز است! هیچ تداخلی در هوک‌های آپدیت یافت نشد."
+
+#: includes/class-wpnd-admin.php:84
+msgid "Open Network Diagnostics"
+msgstr "باز کردن عیب‌یابی شبکه"
+
+#: includes/class-wpnd-admin.php:107
+msgid "WP Network Doctor Alert:"
+msgstr "هشدار دکتر شبکه وردپرس:"
+
+#: includes/class-wpnd-admin.php:108
+msgid "The plugins hooked into WordPress update pipeline have changed! An external updater (e.g. Elementor Pro or a premium theme) was added, removed, or updated."
+msgstr "ساختار هوک‌های متصل به فرآیند آپدیت وردپرس تغییر کرد! یک افزونه یا قالب تجاری (مانند المنتور پرو) که سرور آپدیت اختصاصی دارد، اضافه، حذف یا بروزرسانی شده است."
+
+#: includes/class-wpnd-admin.php:111
+msgid "Inspect Interceptors"
+msgstr "بررسی رهگیرها"
+
+#: includes/class-wpnd-admin.php:114
+msgid "Acknowledge & Dismiss"
+msgstr "تایید و بستن هشدار"
+
+#: includes/class-wpnd-network.php:48
+msgid "Every 3 Minutes"
+msgstr "هر ۳ دقیقه"
+
+#: includes/class-wpnd-network.php:191
+msgid "WP Network Doctor: External network access is temporarily isolated to prevent timeout delays."
+msgstr "دکتر شبکه وردپرس: دسترسی به شبکه خارجی موقتاً مسدود شده تا از کُند شدن و تایم‌اوت سایت جلوگیری شود."
+
+#: includes/class-wpnd-admin.php:73
+msgid "Global Internet: Disconnected (National Intranet only)"
+msgstr "اینترنت جهانی: قطع (فقط شبکه ملی/داخلی در دسترس است)"
+
+#: includes/class-wpnd-admin.php:78
+msgid "Global Internet: Connected (%d ms)"
+msgstr "اینترنت جهانی: متصل (%d میلی‌ثانیه)"
+
+#: includes/class-wpnd-admin.php:86
+msgid "External Traffic Isolation: ACTIVE"
+msgstr "ایزولاسیون ترافیک خارجی: فعال"
+
+#: includes/class-wpnd-admin.php:90
+msgid "External Traffic Isolation: INACTIVE"
+msgstr "ایزولاسیون ترافیک خارجی: غیرفعال"
+
+#: includes/class-wpnd-admin.php:97
+msgid "Disable Isolation (Allow External Requests)"
+msgstr "غیرفعال کردن مسدودسازی (اجازه به درخواست‌های خارجی)"
+
+#: includes/class-wpnd-admin.php:101
+msgid "Block External Connections (Prevent Hangs)"
+msgstr "مسدودسازی اتصالات خارجی (جلوگیری از قفل شدن وردپرس)"
+
+#: admin/templates/dashboard-page.php:12
+msgid "WP Network Doctor: Global Connectivity & Diagnostics"
+msgstr "دکتر شبکه وردپرس: وضعیت اتصال جهانی و عیب‌یابی"
+
+#: admin/templates/dashboard-page.php:17
+msgid "Current Network Health & Isolation Switch"
+msgstr "وضعیت سلامت شبکه و کلید ایزولاسیون"
+
+#: admin/templates/dashboard-page.php:24
+msgid "DISCONNECTED (National Network Only)"
+msgstr "قطع (تنها اینترنت ملی در دسترس است)"
+
+#: admin/templates/dashboard-page.php:28
+msgid "Check Now"
+msgstr "بررسی فوری"
+
+#: admin/templates/dashboard-page.php:57
+msgid "Connectivity State History Log"
+msgstr "گزارش تاریخچه تغییرات اتصال"
+
+#: admin/templates/dashboard-page.php:58
+msgid "A history of state transitions (Connection gained or lost) logged by automatic background probes."
+msgstr "تاریخچه تغییر وضعیت‌ها (وصل شدن یا قطع ارتباط) که به صورت خودکار توسط پروب‌های پس‌زمینه ثبت شده است."
+
+#: admin/templates/dashboard-page.php:84
+msgid "Global connectivity restored."
+msgstr "ارتباط جهانی مجدداً برقرار شد."
+
+#: admin/templates/dashboard-page.php:86
+msgid "Global connectivity lost / timed out."
+msgstr "ارتباط جهانی قطع شد یا تایم‌اوت خورد."

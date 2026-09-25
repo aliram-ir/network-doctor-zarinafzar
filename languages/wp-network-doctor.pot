@@ -1,0 +1,134 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: WP Network Doctor 1.0.0\n"
+"Report-Msgid-Bugs-To: https://zarinafzar.com/support\n"
+"POT-Creation-Date: 2026-09-25 14:04+0330\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Ali Ramezani <info@zarinafzar.com>\n"
+"Language-Team: ZarinAfzar <support@zarinafzar.com>\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 2.2\n"
+"X-Domain: wp-network-doctor\n"
+
+#: wp-network-doctor.php:6
+msgid "WP Network Doctor"
+msgstr ""
+
+#: wp-network-doctor.php:8
+msgid "Diagnose outbound HTTP/API connections, inspect endpoints, purge update transients, and patch restrictive network filters."
+msgstr ""
+
+#: includes/class-wpnd-admin.php:44
+msgid "Network Doctor"
+msgstr ""
+
+#: includes/class-wpnd-admin.php:63
+msgid "You do not have sufficient permissions to access this page."
+msgstr ""
+
+#: includes/class-wpnd-admin.php:73
+msgid "Network patch setting has been updated."
+msgstr ""
+
+#: includes/class-wpnd-admin.php:84
+msgid "Update cache and transients have been successfully purged and refreshed."
+msgstr ""
+
+#: includes/class-wpnd-admin.php:94
+msgid "WordPress Official API"
+msgstr ""
+
+#: includes/class-wpnd-admin.php:96
+msgid "Core updates and plugin repository query service."
+msgstr ""
+
+#: includes/class-wpnd-admin.php:100
+msgid "WordPress Downloads Server"
+msgstr ""
+
+#: includes/class-wpnd-admin.php:102
+msgid "Package download repository for packages and zip files."
+msgstr ""
+
+#: includes/class-wpnd-admin.php:106
+msgid "Elementor Services API"
+msgstr ""
+
+#: includes/class-wpnd-admin.php:108
+msgid "License validation and cloud template library."
+msgstr ""
+
+#: includes/class-wpnd-admin.php:112
+msgid "Cloudflare Anycast DNS / Edge"
+msgstr ""
+
+#: includes/class-wpnd-admin.php:114
+msgid "Global CDN and Anycast DNS connectivity diagnostic."
+msgstr ""
+
+#: includes/class-wpnd-admin.php:118
+msgid "GitHub Raw CDN"
+msgstr ""
+
+#: includes/class-wpnd-admin.php:120
+msgid "Raw code assets and third-party update hosts."
+msgstr ""
+
+#: admin/templates/dashboard-page.php:21
+msgid "Diagnostics & Outbound Health"
+msgstr ""
+
+#: admin/templates/dashboard-page.php:25
+#, php-format
+msgid "Current Network Patch Status: %s"
+msgstr ""
+
+#: admin/templates/dashboard-page.php:27
+msgid "Active"
+msgstr ""
+
+#: admin/templates/dashboard-page.php:28
+msgid "Inactive"
+msgstr ""
+
+#: admin/templates/dashboard-page.php:38
+msgid "Disable Network Patch (Timeout & User-Agent)"
+msgstr ""
+
+#: admin/templates/dashboard-page.php:39
+msgid "Enable Network Patch (Timeout & User-Agent)"
+msgstr ""
+
+#: admin/templates/dashboard-page.php:49
+msgid "Purge Transients & Recheck Updates"
+msgstr ""
+
+#: admin/templates/dashboard-page.php:57
+msgid "Service / Destination"
+msgstr ""
+
+#: admin/templates/dashboard-page.php:58
+msgid "Endpoint & Purpose"
+msgstr ""
+
+#: admin/templates/dashboard-page.php:59
+msgid "HTTP Status"
+msgstr ""
+
+#: admin/templates/dashboard-page.php:60
+msgid "Response Time"
+msgstr ""
+
+#: admin/templates/dashboard-page.php:80
+msgid "Failed"
+msgstr ""
+
+#: admin/templates/dashboard-page.php:91
+#, php-format
+msgid "%s ms"
+msgstr ""
