@@ -1,14 +1,14 @@
 === Network Doctor by ZarinAfzar ===
 Contributors: aliramir
-Tags: network, diagnostics, updates, timeout, connection
+Tags: network, connectivity, diagnostic, curl, zarinafzar
 Requires at least: 5.8
-Tested up to: 6.7
+Tested up to: 7.1
 Requires PHP: 7.4
 Stable tag: 1.2.0
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
-Diagnose WordPress outbound network issues, repository connectivity, and update transient conflicts.
+Network diagnostic tool to monitor server outbound connectivity, detect latency, and isolate external HTTP requests.
 
 == Description ==
 

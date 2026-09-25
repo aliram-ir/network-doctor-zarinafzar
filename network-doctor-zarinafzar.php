@@ -1,12 +1,12 @@
 <?php
 /**
- * Plugin Name:       Network Doctor Zarinafzar
- * Plugin URI:        https://zarinafzar.com/plugins/network-doctor-zarinafzar
+ * Plugin Name:       Network Doctor by ZarinAfzar
+ * Plugin URI:        https://zarinafzar.com
  * Description:       Diagnose outbound HTTP/API connections, inspect endpoints, purge update transients, and patch restrictive network filters.
  * Version:           1.2.0
  * Requires at least: 5.8
  * Requires PHP:      7.4
- * Author:            Ali Ramezani (ZarinAfzar.com)
+ * Author:            ZarinAfzar
  * Author URI:        https://zarinafzar.com
  * License:           GPL v2 or later
  * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
