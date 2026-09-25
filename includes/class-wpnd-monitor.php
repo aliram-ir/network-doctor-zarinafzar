@@ -1,8 +1,8 @@
 <?php
 /**
- * کلاس پایش و مانیتورینگ هوک‌های آپدیت وردپرس
+ * کلاس پایش و رهگیری هوک‌های آپدیت وردپرس
  *
- * @package WP_Network_Doctor
+ * @package Network_Doctor_ZarinAfzar
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
@@ -12,33 +12,33 @@ if ( ! defined( 'ABSPATH' ) ) {
 class WPND_Monitor {
 
 	/**
-	 * کلید آپشن برای ذخیره هش وضعیت هوک‌ها
+	 * کلید نگهداری هش در دیتابیس
 	 */
 	const OPTION_KEY = 'wpnd_last_interceptors_hash';
 
 	/**
-	 * دریافت لیست رهگیرها و توابع متصل به هوک آپدیت
+	 * استخراج لیست رهگیرهای هوک با مشخصات پایدار
 	 *
 	 * @return array
 	 */
 	public static function get_update_interceptors() {
 		global $wp_filter;
 
-		$hook_name = 'pre_set_site_transient_update_plugins';
+		$hook_name    = 'pre_set_site_transient_update_plugins';
 		$interceptors = array();
 
 		if ( ! isset( $wp_filter[ $hook_name ] ) ) {
 			return $interceptors;
 		}
 
-		$hook = $wp_filter[ $hook_name ];
+		$hook      = $wp_filter[ $hook_name ];
 		$callbacks = isset( $hook->callbacks ) ? $hook->callbacks : array();
 
 		foreach ( $callbacks as $priority => $functions ) {
 			foreach ( $functions as $key => $callback_data ) {
 				$function = $callback_data['function'];
-				$name = '';
-				$file = '';
+				$name     = '';
+				$file     = '';
 
 				if ( is_array( $function ) ) {
 					$object = $function[0];
@@ -46,15 +46,15 @@ class WPND_Monitor {
 
 					if ( is_object( $object ) ) {
 						$class_name = get_class( $object );
-						$name = $class_name . '->' . $method;
+						$name       = $class_name . '->' . $method;
 					} else {
 						$class_name = $object;
-						$name = $class_name . '::' . $method;
+						$name       = $class_name . '::' . $method;
 					}
 
 					try {
 						$reflection = new ReflectionClass( $class_name );
-						$file = $reflection->getFileName();
+						$file       = $reflection->getFileName();
 					} catch ( Exception $e ) {
 						$file = '';
 					}
@@ -62,7 +62,7 @@ class WPND_Monitor {
 					$name = $function;
 					try {
 						$reflection = new ReflectionFunction( $function );
-						$file = $reflection->getFileName();
+						$file       = $reflection->getFileName();
 					} catch ( Exception $e ) {
 						$file = '';
 					}
@@ -70,7 +70,7 @@ class WPND_Monitor {
 					$name = 'Closure (Anonymous Function)';
 					try {
 						$reflection = new ReflectionFunction( $function );
-						$file = $reflection->getFileName();
+						$file       = $reflection->getFileName();
 					} catch ( Exception $e ) {
 						$file = '';
 					}
@@ -81,7 +81,7 @@ class WPND_Monitor {
 					$file = ltrim( $file, '/\\' );
 				}
 
-				// فقط از مشخصات پایدار برای شناسایی استفاده می‌کنیم نه شناسه حافظه شیء
+				// فقط ویژگی‌های پایدار را ثبت می‌کنیم و شناسه پویا شیء در حافظه حذف شده است
 				$interceptors[] = array(
 					'name'     => $name,
 					'file'     => $file,
@@ -94,14 +94,13 @@ class WPND_Monitor {
 	}
 
 	/**
-	 * بررسی اینکه آیا لیست هوک‌ها نسبت به آخرین وضعیت تایید شده تغییر کرده است یا خیر
+	 * بررسی تغییر در لیست هوک‌های آپدیت نسبت به هش ذخیره‌شده
 	 *
 	 * @return bool
 	 */
 	public static function has_interceptors_changed() {
 		$current_interceptors = self::get_update_interceptors();
-		
-		// اگر هیچ هوکی غیر از حالت پیش‌فرض وردپرس نبود نیازی به هشدار نیست
+
 		if ( empty( $current_interceptors ) ) {
 			return false;
 		}
@@ -109,7 +108,6 @@ class WPND_Monitor {
 		$current_hash = md5( wp_json_encode( $current_interceptors ) );
 		$saved_hash   = get_option( self::OPTION_KEY, false );
 
-		// بار اول هش جاری را ذخیره می‌کنیم تا بلافاصله کاربر با هشدار روبرو نشود
 		if ( false === $saved_hash ) {
 			update_option( self::OPTION_KEY, $current_hash, 'no' );
 			return false;
@@ -119,7 +117,7 @@ class WPND_Monitor {
 	}
 
 	/**
-	 * تایید و همگام‌سازی وضعیت جاری هوک‌ها
+	 * تایید و ذخیره هش جاری هوک‌ها به عنوان وضعیت معتبر
 	 *
 	 * @return bool
 	 */
